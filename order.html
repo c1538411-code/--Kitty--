@@ -41,16 +41,31 @@
         <input type="email" class="form-control" name="email" required>
       </div>
       
-      <div class="col-12">
-        <label class="form-label">想購買的商品</label>
-        <select class="form-control" name="product">
-          <option value="">請選擇...</option>
-          <option value="001">001 經典 Kitty 絨毛娃娃 ($199)</option>
-          <option value="002">002 Kitty 陶瓷馬克杯 ($150)</option>
-          <option value="003">003 Kitty 大抱枕 ($380)</option>
-          <option value="004">004 Kitty 手機殼 ($250)</option>
-        </select>
-      </div>
+     <!-- 想購買的商品（可複選） -->
+<div class="col-12">
+  <label class="form-label">想購買的商品（可複選）</label>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="products" id="p1" value="經典 Kitty 絨毛娃娃">
+    <label class="form-check-label" for="p1">經典 Kitty 絨毛娃娃（$199）</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="products" id="p2" value="Kitty 陶瓷馬克杯">
+    <label class="form-check-label" for="p2">Kitty 陶瓷馬克杯（$150）</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="products" id="p3" value="Kitty 大抱枕">
+    <label class="form-check-label" for="p3">Kitty 大抱枕（$380）</label>
+  </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="products" id="p4" value="Kitty 鑰匙圈">
+    <label class="form-check-label" for="p4">Kitty 鑰匙圈（$80）</label>
+  </div>
+</div>
+
       
       <div class="col-md-6">
         <label class="form-label">購買數量</label>
